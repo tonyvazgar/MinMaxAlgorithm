@@ -8,6 +8,8 @@
 import java.awt.Frame;
 import java.awt.Button;
 import java.awt.Color;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 
 public class GameInterface extends Frame
@@ -25,6 +27,12 @@ public class GameInterface extends Frame
         setBackground(color);
         setLayout(null);
         buildComponents();
+        addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent we)
+            {
+                System.exit(0);
+            }
+        });
     }//end constructor
 
 
