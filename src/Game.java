@@ -174,7 +174,7 @@ public class Game implements ActionListener
         if (canMove('X'))
         {
             // Agent plays
-            estadoSeleccionado = MinMax.miniMaxModerate(currentState);
+            estadoSeleccionado = MinMax.miniMaxEasy(currentState);
             clickedButton = agentMove(estadoSeleccionado.row,
                                      estadoSeleccionado.column);
             updateState("MAX", clickedButton);

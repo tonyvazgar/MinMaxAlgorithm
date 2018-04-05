@@ -21,7 +21,7 @@ public class GameInterface extends Frame
     {
         Color color;
         /////////////
-        setTitle(" Neko!");
+        setTitle(" Jueguito!");
         setBounds(100, 100, 230, 280);
         color = new Color(200,240,200);
         setBackground(color);
